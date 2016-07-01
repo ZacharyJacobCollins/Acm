@@ -1,0 +1,9 @@
+.splash-background {
+    background-image: url(/img/intro-bg.jpg);
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+

@@ -5,9 +5,13 @@
 #Phase 1
 
 
+#Phase 2
 
+Introduction animation, electrion diagram or something.
 
-
+#Colors
+Eastern Acm Green class=" green darken-4 "
+Acm Grey class=" grey darken-4 "
 
 #Laravel Font
     <head>
