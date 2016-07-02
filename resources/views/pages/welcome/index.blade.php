@@ -11,19 +11,21 @@
         <li class="tab col s3"><a  class="green-text" href="#employers">Employers</a></li>
         <li class="tab col s3"><a class="green-text" href="#members">Members</a></li>
         <li class="tab col s3"><a class="green-text" href="#hackathon">Hackathon</a></li>
+        <li class="tab col s3"><a class="green-text" href="#timeline">Schedule</a></li>
       </ul>
     </div>
 
     <!-- Include tabbed pages -->
-    @include('pages.welcome.whowearetab')
-    @include('pages.welcome.employertab')
-    @include('pages.welcome.hackathontab')
-    @include('pages.welcome.membertab')
+    @include('pages.welcome.employers')
+    @include('pages.welcome.hackathon')
+    @include('pages.welcome.timeline')
+    @include('pages.welcome.members')
+    @include('pages.welcome.whoweare')
 
  
 </body>
   </br></br></br></br></br></br>
   </br></br></br></br></br></br>
   </br></br></br></br></br></br>
-  @include('layouts.foot')
+  @include('layouts.footer')
 </html>

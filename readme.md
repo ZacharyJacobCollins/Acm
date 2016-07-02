@@ -7,6 +7,7 @@ Eastern Acm Green class=" green darken-4 "
 Acm Grey class=" grey darken-4 "
 
 #Phase 1
+Add background image to welcome page
 Welcome page
 Blog
 Hackathon cms 
@@ -22,3 +23,4 @@ Admin page and permissions for officers
 Template all color classes with blade
 Template Spotlight
 Allow each user to choose their own color
+Filter to allow employers to filter through members based on applicable skills
