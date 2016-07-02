@@ -11,6 +11,7 @@
         <li class="tab col s3"><a  class="green-text" href="#employers">Employers</a></li>
         <li class="tab col s3"><a class="green-text" href="#members">Members</a></li>
         <li class="tab col s3"><a class="green-text" href="#hackathon">Hackathon</a></li>
+        <li class="tab col s3"><a class="green-text" href="#join">Join</a></li>
         <li class="tab col s3"><a class="green-text" href="#timeline">Schedule</a></li>
       </ul>
     </div>
@@ -20,6 +21,7 @@
     @include('pages.welcome.hackathon')
     @include('pages.welcome.timeline')
     @include('pages.welcome.members')
+    @include('pages.welcome.join')
     @include('pages.welcome.whoweare')
 
  

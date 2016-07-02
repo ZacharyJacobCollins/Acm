@@ -1,82 +1,83 @@
-@extends('layouts.app')
+<!DOCTYPE html>
+<html lang="en" class=" js cssanimations csscalc cssvhunit gr__tympanus_net"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-@section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
-                <div class="panel-body">
-                    <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
-                        {{ csrf_field() }}
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>ACM</title>
+		<meta name="description" content="Fullscreen Form Interface: A distraction-free form concept with fancy animations">
+		<meta name="keywords" content="fullscreen form, css animations, distraction-free, web design">
+		<meta name="author" content="Zachary Collins">
+		<link rel="stylesheet" type="text/css" href="/css/signup/normalize.css">
+		<link rel="stylesheet" type="text/css" href="/css/signup/codrops.css">
+		<link rel="stylesheet" type="text/css" href="/css/signup/component.css">
+		<link rel="stylesheet" type="text/css" href="/css/signup/cs-select.css">
+		<link rel="stylesheet" type="text/css" href="/css/signup/cs-skin-boxes.css">
+		<script type="text/javascript" src="/js/signup/ga.js"></script>
+        <script type="text/javascript" src="/js/signup/modernizr.custom.js"></script>
 
-                        <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                            <label for="name" class="col-md-4 control-label">Name</label>
+	</head>
+	<body data-gr-c-s-loaded="true">
+		<div class="container">
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}">
+			<div class="fs-form-wrap" id="fs-form-wrap">
+				<div class="fs-title">
+					<h1>Eastern Michigan Acm</h1>
+				</div>
+				<form id="myform" class="fs-form fs-form-full" autocomplete="off" method="POST" action="{{ url('/register') }}">
+					{!! csrf_field() !!}
+					<ol class="fs-fields">
+						<li class="fs-current">
+							<label class="fs-field-label fs-anim-upper" for="q1">Enter your name</label>
+							<input class="fs-anim-lower" id="q1" name="name" type="text" placeholder="(First and Last)" required="true" style="color: #000">
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q2" data-info="For general organization purposes">What's your email address?</label>
+							<input class="fs-anim-lower" id="q2" name="email" type="email" placeholder="Watch for updates" required="true" style="color: #000">
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q3" data-info="At least eight characters">Enter a password</label>
+							<input class="fs-anim-lower" id="q3" name="password" type="password" placeholder="Watch for updates" required="true" style="color: #000">
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q4" data-info="At least eight characters">Please re-enter your password</label>
+							<input class="fs-anim-lower" id="q4" name="password_confirmation" type="password" placeholder="Watch for updates" required="true" style="color: #000">
+						</li>
 
-                                @if ($errors->has('name'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('name') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
+						<!--	<li>  
+							<label class="fs-field-label fs-anim-upper" for="q4">Upload a picture of yourself, this will be public facing, so keep it professional-ish</label>
+							<textarea class="fs-anim-lower" id="q4" name="q4" placeholder="even if you don't we'll just assume you're amazing!" style="color: #000" ></textarea>
+						</li>
+                        <li>
+							<label class="fs-field-label fs-anim-upper" for="q2" data-info="">Upload your resume</label>
+							<input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="" required="" style="color: #000">
+						</li>
+						-->
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
+					</ol><!-- /fs-fields -->
+					<button class="fs-submit" type="submit">Sign Up</button>
+				</form><!-- /fs-form -->
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
-                            <label for="password" class="col-md-4 control-label">Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control" name="password">
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group{{ $errors->has('password_confirmation') ? ' has-error' : '' }}">
-                            <label for="password-confirm" class="col-md-4 control-label">Confirm Password</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation">
-
-                                @if ($errors->has('password_confirmation'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password_confirmation') }}</strong>
-                                    </span>
-                                @endif
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="fa fa-btn fa-user"></i> Register
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
+		</div><!-- /container -->
+		<script src="/js/classie.js"></script>
+		<script src="/js/signup/selectFx.js"></script>
+		<script src="/js/signup/fullscreenForm.js"></script>
+		<script>
+			(function() {
+				var formWrap = document.getElementById( 'fs-form-wrap' );
+				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {
+					new SelectFx( el, {
+						stickyPlaceholder: false,
+						onChange: function(val){
+							document.querySelector('span.cs-placeholder').style.backgroundColor = val;
+						}
+					});
+				} );
+				new FForm( formWrap, {
+					onReview : function() {
+						classie.add( document.body, 'overview' );
+					}
+				} );
+			})();
+		</script>
+<div class="grammarly-disable-indicator"></div></body><div></div><div></div></html>
