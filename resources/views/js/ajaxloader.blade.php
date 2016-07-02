@@ -1,15 +1,15 @@
 <script>
-	(function() {
 		/*
-		* @param {itemName} returns inner html of clicked item
-		* @param {ev} returns the actual event object
+		*  Loads the correct content based on the current url hash with ajax
 		*/
-		function loadContent(ev, itemName) {
+		function loadContent() {
+			var hash = window.location.hash.substring(1);
 			ajaxUrl = "";
 			ajaxTarget = $('#content');
-			console.log(itemName);
+			console.log(hash);
+			
 			//Map item names to ajax urls
-			switch(itemName) {
+			switch(hash) {
 				case "Create":
 					ajaxUrl = "/meeting/create";
 					break;
@@ -17,9 +17,8 @@
 					ajaxUrl = "/meeting/index";
 					break;
 				default:
-					console.log(error+" Could not get nav bar ajax url");
+					console.log(" Could not get nav bar ajax url");
 			}			
-			ev.preventDefault();
 			closeMenu();
 			ajaxTarget = ajaxTarget.empty();
 			ajaxTarget.addClass('content--loading');
@@ -36,5 +35,6 @@
 				});
 			}, 700);
 		}
-	})();
+
+		loadContent();
 </script>
