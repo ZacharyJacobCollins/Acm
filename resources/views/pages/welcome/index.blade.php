@@ -8,9 +8,9 @@
     <div class="col s12">
       <ul class="tabs black">
         <li class="tab col s3" class="active"><a class="green-text" href="#whoweare">Who we are</a></li>
-        <li class="tab col s3"><a href="#employers">Employers</a></li>
-        <li class="tab col s3"><a class="cyan-text" href="#members">Members</a></li>
-        <li class="tab col s3"><a class="deep-purple-text" href="#hackathon">Hackathon</a></li>
+        <li class="tab col s3"><a  class="green-text" href="#employers">Employers</a></li>
+        <li class="tab col s3"><a class="green-text" href="#members">Members</a></li>
+        <li class="tab col s3"><a class="green-text" href="#hackathon">Hackathon</a></li>
       </ul>
     </div>
 
