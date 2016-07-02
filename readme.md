@@ -17,6 +17,7 @@ Application
 Meeting sign in and attendance
 
 #Phase 2
+Update sign in page
 Introduction animation, electrion diagram or something.
 Dynamic cards displaying github activity
 Admin page and permissions for officers

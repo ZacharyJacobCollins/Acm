@@ -4,10 +4,13 @@
         <!-- Banner -->    
         <div class="section no-pad-bot black" id="index-banner">
           <div class="container">
-            <h1 class="header center white-text text-darken-4">Our Members</h1>
+            <h1 class="header center white-text text-darken-4">Members</h1>
+            <a href="/login" class="header center waves-effect waves-light btn green darken-4">Sign In</a>
           </div>
         </div>
 
+
+        <h1 class="header center white-text text-darken-4">Our Members</h1>
         <!-- Member cards --> 
         @for($j=0; $j<3; $j++)
           <div class="row">
