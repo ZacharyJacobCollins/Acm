@@ -16,8 +16,7 @@ class CreateProfessorsTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
-            $table->string('name');
-            $table->integer('name');
+            $table->integer('rating');
             
             //Relationships and models for each
             // $table->string('courses');

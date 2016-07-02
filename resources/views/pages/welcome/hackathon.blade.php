@@ -4,7 +4,7 @@
         <!-- Banner -->    
         <div class="section no-pad-bot black" id="index-banner">
           <div class="container">
-            <h1 class="header center yellow-text">Hackathon</h1>
+            <h1 class="header center green-text text-darken-4">Hackathon</h1>
             <div class="row center">
               This will be a countdown timer here
             </div>

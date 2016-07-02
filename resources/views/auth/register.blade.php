@@ -42,14 +42,6 @@
 							<label class="fs-field-label fs-anim-upper" for="q4" data-info="At least eight characters">Please re-enter your password</label>
 							<input class="fs-anim-lower" id="q4" name="password_confirmation" type="password" placeholder="At least eight characters" required="true" style="color: #000">
 						</li>
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q4">Upload a photo of yourself that you would be comfortable presenting to employers</label>
-							<input class="fs-anim-lower" id="q4" name="password_confirmation" type="password" placeholder="" required="true" style="color: #000">
-						</li>
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q4" data-info="This will be displayed publicly, omit personal details if you wish ex. phone number">Upload your resume</label>
-							<input class="fs-anim-lower" id="q4" name="password_confirmation" type="password" placeholder="At least eight characters" required="true" style="color: #000">
-						</li>
 
 						<!--	<li>  
 							<label class="fs-field-label fs-anim-upper" for="q4">Upload a picture of yourself, this will be public facing, so keep it professional-ish</label>
