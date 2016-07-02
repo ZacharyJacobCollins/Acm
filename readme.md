@@ -25,3 +25,6 @@ Template all color classes with blade
 Template Spotlight
 Allow each user to choose their own color
 Filter to allow employers to filter through members based on applicable skills
+Programming challenges
+Agile board / start a project
+Questions and answers among members

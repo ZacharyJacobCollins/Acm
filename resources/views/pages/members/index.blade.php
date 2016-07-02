@@ -3,15 +3,8 @@
 <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
     <!-- Side nav -->
     <ul id="nav-mobile" class="side-nav fixed">
-        <li class="logo"><a id="logo-container" href="easternacm.com" class="brand-logo">
-            <object id="front-page-logo" type="image/svg+xml" data="/images/toledo.jpg">Your browser does not support SVG</object></a>
-        </li>
-        <li class="search">
-            <div class="search-wrapper card">
-            <input id="search"><i class="material-icons">search</i>
-            <div class="search-results"></div>
-            </div>
-        </li>
+        <!-- Logo -->
+        <img class="circle responsive-img" src="/images/logos/acm/logo.png">
         <li class="no-padding">
             <ul class="collapsible collapsible-accordion">
                 <li class="bold"><a class="collapsible-header  waves-effect waves-teal">Meetings</a>

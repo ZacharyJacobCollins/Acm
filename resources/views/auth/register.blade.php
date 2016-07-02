@@ -32,15 +32,23 @@
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q2" data-info="For general organization purposes">What's your email address?</label>
-							<input class="fs-anim-lower" id="q2" name="email" type="email" placeholder="Watch for updates" required="true" style="color: #000">
+							<input class="fs-anim-lower" id="q2" name="email" type="email" placeholder="Email" required="true" style="color: #000">
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q3" data-info="At least eight characters">Enter a password</label>
-							<input class="fs-anim-lower" id="q3" name="password" type="password" placeholder="Watch for updates" required="true" style="color: #000">
+							<input class="fs-anim-lower" id="q3" name="password" type="password" placeholder="Password" required="true" style="color: #000">
 						</li>
 						<li>
 							<label class="fs-field-label fs-anim-upper" for="q4" data-info="At least eight characters">Please re-enter your password</label>
-							<input class="fs-anim-lower" id="q4" name="password_confirmation" type="password" placeholder="Watch for updates" required="true" style="color: #000">
+							<input class="fs-anim-lower" id="q4" name="password_confirmation" type="password" placeholder="At least eight characters" required="true" style="color: #000">
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q4">Upload a photo of yourself that you would be comfortable presenting to employers</label>
+							<input class="fs-anim-lower" id="q4" name="password_confirmation" type="password" placeholder="" required="true" style="color: #000">
+						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q4" data-info="This will be displayed publicly, omit personal details if you wish ex. phone number">Upload your resume</label>
+							<input class="fs-anim-lower" id="q4" name="password_confirmation" type="password" placeholder="At least eight characters" required="true" style="color: #000">
 						</li>
 
 						<!--	<li>  
