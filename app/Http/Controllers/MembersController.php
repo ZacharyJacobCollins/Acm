@@ -21,4 +21,11 @@ class MembersController extends Controller
     public function index() {
         return view('pages.members.index');
     }
+
+    /**
+    *  @param the page requested by the url   
+    */
+    public function ajax($page) {
+        return view("pages.members.ajax.".$page);
+    }
 }

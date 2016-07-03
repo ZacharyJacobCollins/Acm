@@ -1,17 +1,20 @@
 <script>
+		//Add listener to window object to watch for hash change
+		window.onhashchange = loadContent;
+
 		/*
 		*  Loads the correct content based on the current url hash with ajax
 		*/
 		function loadContent() {
 			var hash = window.location.hash.substring(1);
 			ajaxUrl = "";
-			ajaxTarget = $('#content');
-			console.log(hash);
+			ajaxTarget = $('#ajax');
+			console.log(window.location.hash);
 			
 			//Map item names to ajax urls
 			switch(hash) {
-				case "Create":
-					ajaxUrl = "/meeting/create";
+				case "profile":
+					ajaxUrl = "/members/ajax/profile";
 					break;
 				case "View":
 					ajaxUrl = "/meeting/index";
@@ -19,11 +22,19 @@
 				default:
 					console.log(" Could not get nav bar ajax url");
 			}			
-			closeMenu();
 			ajaxTarget = ajaxTarget.empty();
-			ajaxTarget.addClass('content--loading');
+			ajaxTarget.html("<div class=\"preloader-wrapper big active\">"+
+			"<div class=\"spinner-layer spinner-blue-only\">"+
+				"<div class=\"circle-clipper left\">"+
+					"<div class=\"circle\"></div>"+
+				"</div><div class=\"gap-patch\">"+
+					"<div class=\"circle\"></div>"+
+				"</div><div class=\"circle-clipper right\">"+
+					"<div class=\"circle\"></div>"+
+			"</div></div></div>");
+
 			setTimeout(function() {
-				ajaxTarget.removeClass('content--loading');
+				ajaxTarget= ajaxTarget.empty();
 				//load html. Optionally send which view in the request here.  
 				var html = $.ajax({
 					url: ajaxUrl, 
@@ -36,5 +47,4 @@
 			}, 700);
 		}
 
-		loadContent();
 </script>

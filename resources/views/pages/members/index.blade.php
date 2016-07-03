@@ -18,7 +18,7 @@
         <img class="responsive-img" src="/images/logos/acm/logo.png">
         <li class="no-padding">
             <ul class="collapsible collapsible-accordion">
-                <li class="bold"><a href="#meetings" class="collapsible-header waves-effect waves-teal">Meetings</a>
+                <li class="bold"><a href="#" class="collapsible-header waves-effect waves-teal">Meetings</a>
                     <div class="collapsible-body">
                     <ul>
                         <li><a href="#">Sign in</a></li>
@@ -49,7 +49,7 @@
                 </li>
             </ul>
         </li>
-        <li class="bold"><a href="#" class="waves-effect waves-teal">Profile Settings</a></li>
+        <li class="bold"><a href="#profile" class="waves-effect waves-teal">Profile Settings</a></li>
     </ul>
     <!-- /Side nav -->
     
@@ -58,10 +58,9 @@
     </div>
 
 
-    @include('forms.image')
 
 </div>
-@include('layouts.footer')
 
 <!-- Ajax loader -->
 @include('js.ajaxloader')
+@include('layouts.scripts')
