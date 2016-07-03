@@ -4,7 +4,8 @@ use Illuminate\Http\Request;
 use Auth;
 use Image;
 use App\Http\Requests;
-class UploadController extends Controller
+
+class FileController extends Controller
 {
     /**
     *  Controller implements authentication middleware   
@@ -28,4 +29,21 @@ class UploadController extends Controller
         }
         return view('pages.members.index', array('user'=>Auth::user() ) );
     }
+
+    /**
+    *   Update user resume avatar 
+    */
+    public function updateResume(Request $request) {
+        if($request->hasFile('resume')) {
+            $avatar = $request ->file('resume');
+            $filename =  trim(Auth::user()->name) . 'Resume.' . $avatar->getClientOriginalExtension();
+            Image::make($avatar)->resize(300, 300)->save( public_path('storage/resume/' . $filename) );
+            $user = Auth::user();
+            $user->avatar = $filename;
+            $user->save();
+        }
+        return view('pages.members.index', array('user'=>Auth::user() ) );
+    }
+
+    
 }

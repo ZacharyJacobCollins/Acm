@@ -2,7 +2,7 @@
 
     <h2> Profile </h2>
     </br></br>
-    <form enctype="multipart/form-data" action="/update/avatar" method="POST">
+    <form enctype="multipart/form-data" action="/file/avatar" method="POST">
         {!! csrf_field() !!}
         <label>Change your profile Image</label>
         </br></br>
@@ -10,7 +10,5 @@
         <input type="submit"> 
         </br></br>
         </br></br>
-
     </form>
-
 </div>

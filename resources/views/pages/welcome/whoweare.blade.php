@@ -32,3 +32,4 @@
 
       @include('partials.cardrow')
 </div>
+
