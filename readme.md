@@ -15,6 +15,8 @@ Automated meeting emails
 Timeline
 Application
 Meeting sign in and attendance
+If no ajax content found display error in members page
+
 
 #Phase 2
 Update sign in page

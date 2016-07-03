@@ -14,7 +14,7 @@
 			ajaxTarget = ajaxTarget.empty();
 
 			//Loading icon
-			ajaxTarget.html("<div class=\"preloader-wrapper big active\">"+
+			ajaxTarget.html("<div class=\"loader preloader-wrapper big active\">"+
 			"<div class=\"spinner-layer spinner-blue-only\">"+
 				"<div class=\"circle-clipper left\">"+
 					"<div class=\"circle\"></div>"+

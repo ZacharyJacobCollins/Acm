@@ -11,3 +11,8 @@
     max-height: 135px;
     max-width: 135px;
 }
+
+.loader {
+    margin-top: 30%;
+    margin-left: 50%;
+}

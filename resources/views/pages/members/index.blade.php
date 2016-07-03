@@ -27,6 +27,9 @@
                         <ul>
                             <li><a href="#schedule">Schedule</a></li>
                         </ul>
+                        <ul>
+                            <li><a href="#managemeetings">Manage Meetings</a></li>
+                        </ul>
                         </div>
                     </li>
                     <li class="bold"><a class="collapsible-header waves-effect waves-purple">Resources</a>
