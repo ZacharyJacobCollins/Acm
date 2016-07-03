@@ -16,11 +16,12 @@ class CreateMeetingsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('subject');
+            $table->string('date');
             $table->string('start');
             $table->string('end');
             $table->string('description')->default('Acm meeting and workshop');
-            $table->string('avatar')->default('default.jpg');
             $table->string('speaker')->default('Acm');
+            $table->string('avatar')->default('default.jpg');
             $table->rememberToken();
             $table->timestamps();
         });
