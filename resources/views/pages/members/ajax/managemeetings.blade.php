@@ -32,15 +32,19 @@
                 <input name="endtime" id="endtime" type="tel" class="validate">
                 <label for="endtime">Enter an end time for the meeting</label>
             </div>
-            <div class="file-field input-field col s6">
+             <div class="input-field col s12">
+                <textarea name="avatar" id="avatar" class="materialize-textarea"></textarea>
+                <label for="avatar">AVATAR IMAGE UPLOAD HERE</label>
+            </div>
+            <!--<div class="file-field input-field col s6">
                 <div class="btn">
                     <span>Meeting avatar</span>
-                    <input name="image" type="file">
+                    <input name="avatar" type="file">
                 </div>
                 <div class="file-path-wrapper">
                     <input class="file-path validate" type="text" placeholder="Upload an image for the meeting avatar">
                 </div>
-            </div>
+            </div>-->
             <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
                 <input name="speaker" id="speaker" type="tel" class="validate">

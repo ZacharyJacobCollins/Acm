@@ -36,13 +36,14 @@ class MeetingController extends Controller
         return Meeting::create([
             'title'   => $request->input('title'),
             'subject' => $request->input('subject'),
-            'starttime'   => $request->input('start'),
-            'endtime'     => $request->input('end'),
-            'date'     => $request->input('date'),
+            'starttime'   => $request->input('starttime'),
+            'endtime'     => $request->input('endtime'),
+            'date'     => $request->input('datepicker'),
             'avatar'  => $request->input('avatar'),
             'speaker' => $request->input('speaker'),
             'description' => $request->input('description'),
         ]);
+
     }
     
 }

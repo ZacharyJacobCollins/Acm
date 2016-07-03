@@ -17,6 +17,7 @@ Application
 Meeting sign in and attendance
 If no ajax content found display error in members page
 Template out default descriptions and subjects for meetings on manage form / creating a new meeting form
+Allow image upload for avatar
 
 #Phase 2
 Update sign in page
