@@ -6,24 +6,11 @@
 		*/
 		function loadContent() {
 			var hash = window.location.hash.substring(1);
-			ajaxUrl = "";
+			ajaxUrl = "/members/ajax/"+hash;
 			ajaxTarget = $('#ajax');
 			console.log(window.location.hash);
 			
 			//Map hashes to ajax urls
-			switch(hash) {
-				case "home":
-					ajaxUrl = "/members/ajax/home";
-					break;
-				case "profile":
-					ajaxUrl = "/members/ajax/profile";
-					break;
-				case "signin":
-					ajaxUrl = "/members/ajax/profile";
-					break;
-				default:
-					console.log(" Could not get nav bar ajax url");
-			}			
 			ajaxTarget = ajaxTarget.empty();
 
 			//Loading icon
