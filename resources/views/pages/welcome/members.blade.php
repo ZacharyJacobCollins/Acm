@@ -7,7 +7,7 @@
             <h1 class="header center white-text text-darken-4">Members</h1>
               <div class="col s2 offset-s5">
                 <a href="/login" class="header center waves-effect waves-light btn green darken-4">Sign In</a>
-                <a href="/members" class="header center waves-effect waves-light btn green darken-4">Members Page</a>
+                <a href="/members#home" class="header center waves-effect waves-light btn green darken-4">Members Page</a>
               </div>
           </div>
         </div>

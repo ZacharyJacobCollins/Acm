@@ -16,6 +16,7 @@
         <div class="container section">
             <img class="responsive-img small-logo" src="/images/logos/acm.png">
         </div>
+        <li class="bold"><a href="#home" class="waves-effect waves-teal">Home</a></li>
         <li class="no-padding">
             <ul class="collapsible collapsible-accordion">
                 <li class="bold"><a href="#" class="collapsible-header waves-effect waves-teal">Meetings</a>
