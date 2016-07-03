@@ -1,4 +1,4 @@
-<input id="datepicker" type="date" class="datepicker">
+<input name="datepicker" id="datepicker" type="date" class="datepicker">
 
 <script>
 
