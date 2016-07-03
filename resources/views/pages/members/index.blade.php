@@ -1,21 +1,21 @@
 @include('layouts.head')
 
- <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
-    <a class="btn-floating btn-large green darken-4 ">
-      <i class="large material-icons">menu</i>
-    </a>
-    <ul>
-      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
-    </ul>
-  </div>
+<!-- Floating button containing logout -->
+<div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+<a class="btn-floating btn-large green darken-4 ">
+    <i class="large material-icons">settings</i>
+</a>
+<ul>
+    <li><a href="/logout" class="btn-floating red"><i class="material-icons">power_settings_new</i></a></li>
+</ul>
+</div>
 
 <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
     <!-- Side nav -->
     <ul id="nav-mobile" class="side-nav fixed">
-        <img class="responsive-img" src="/images/logos/acm/logo.png">
+        <div class="container section">
+            <img class="responsive-img small-logo" src="/images/logos/acm.png">
+        </div>
         <li class="no-padding">
             <ul class="collapsible collapsible-accordion">
                 <li class="bold"><a href="#" class="collapsible-header waves-effect waves-teal">Meetings</a>

@@ -1,3 +1,4 @@
+<!-- NOT IN USE CURRENTLY -->
 <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a></div>
 <ul id="nav-mobile" class="side-nav fixed">
 <li class="logo"><a id="logo-container" href="http://materializecss.com/" class="brand-logo">
