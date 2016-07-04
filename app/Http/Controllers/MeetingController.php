@@ -6,6 +6,7 @@ use App\Meeting;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use Redirect;
+use Session;
 
 class MeetingController extends Controller
 {
@@ -44,7 +45,7 @@ class MeetingController extends Controller
     *   @param {request} POST http request
     */
     public function reviewMeeting(Request $request) {
-        $newMeeting = new Meeting($request->all()); 
-        return redirect('/members#newmeeting');
+        $meeting = new Meeting($request->all());
+        return redirect('/members#meetingreview')->with($meeting, 'meeting');
     }
 }

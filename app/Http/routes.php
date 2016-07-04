@@ -7,7 +7,6 @@ Route::get('/', function () {
 Route::auth();
 Route::get('/home', 'HomeController@index');
 
-
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
@@ -21,7 +20,7 @@ Route::group(['prefix' => 'file'], function() {
 Route::get('/members/ajax/{type}', 'MembersController@ajax');
 
 Route::group(['prefix' => 'meeting'], function() {
-    Route::post('/review', 'MeetingController@reviewMeeting');
     Route::post('/create', 'MeetingController@create');
+    Route::post('/review', 'MeetingController@reviewMeeting');
+    
 });
-

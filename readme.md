@@ -33,3 +33,4 @@ Agile board / start a project
 Questions and answers among members
 Google map api on the meeting place
 Automated emails for creating meetings, rsvps etc.
+When something tosses an error don't clear a form, keep the previous stuff there.  
