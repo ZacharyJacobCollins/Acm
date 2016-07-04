@@ -35,6 +35,7 @@ class MeetingController extends Controller
     *   @param {request} POST http request
     */
     public function create(Request $request) {
+        dd($request);
         $newMeeting = new Meeting($request->all()); 
         Meeting::create($request->all());
     }
