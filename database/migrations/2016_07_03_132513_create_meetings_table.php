@@ -8,7 +8,7 @@ class CreateMeetingsTable extends Migration
     /**
      * Run the migrations.
      *
-     * @return void
+     * @return void[]
      */
     public function up()
     {
@@ -16,9 +16,8 @@ class CreateMeetingsTable extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('subject');
-            $table->string('date');
-            $table->string('start');
-            $table->string('end');
+            $table->string('starttime');
+            $table->string('endtime');
             $table->string('description')->default('Acm meeting and workshop');
             $table->string('speaker')->default('Acm');
             $table->string('avatar')->default('default.jpg');

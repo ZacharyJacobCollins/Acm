@@ -28,7 +28,10 @@
                             <li><a href="#schedule">Schedule</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#managemeetings">Manage Meetings</a></li>
+                            <li><a href="#">Manage Meetings</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Create a Meeting</a></li>
                         </ul>
                         </div>
                     </li>

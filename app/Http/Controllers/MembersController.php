@@ -12,10 +12,10 @@ class MembersController extends Controller
     /**
     *  Controller implements authentication middleware   
     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
 
     public function index() {

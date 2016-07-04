@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Meeting;
 use Illuminate\Http\Request;
 use App\Http\Requests;
+use Redirect;
 
 class MeetingController extends Controller
 {
@@ -29,21 +30,21 @@ class MeetingController extends Controller
     }
 
     /**
-    *   Creates a meeting given a request
-    *   @param {request} http request
+    *   Creates a meeting given a POST request
+    *   @param {request} POST http request
     */
     public function create(Request $request) {
-        return Meeting::create([
-            'title'   => $request->input('title'),
-            'subject' => $request->input('subject'),
-            'starttime'   => $request->input('starttime'),
-            'endtime'     => $request->input('endtime'),
-            'date'     => $request->input('datepicker'),
-            'avatar'  => $request->input('avatar'),
-            'speaker' => $request->input('speaker'),
-            'description' => $request->input('description'),
-        ]);
-
+        $newMeeting = new Meeting($request->all()); 
+        Meeting::create($request->all());
     }
-    
+
+    /**
+    *   Review meeting stuff before creating it/placing it in database/sending out emails
+    *   Redirect via ajax with hash
+    *   @param {request} POST http request
+    */
+    public function reviewMeeting(Request $request) {
+        $newMeeting = new Meeting($request->all()); 
+        return redirect('/members#newmeeting');
+    }
 }

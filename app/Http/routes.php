@@ -21,6 +21,7 @@ Route::group(['prefix' => 'file'], function() {
 Route::get('/members/ajax/{type}', 'MembersController@ajax');
 
 Route::group(['prefix' => 'meeting'], function() {
+    Route::post('/review', 'MeetingController@reviewMeeting');
     Route::post('/create', 'MeetingController@create');
 });
 

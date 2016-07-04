@@ -8,14 +8,13 @@ class Meeting extends Model
 {
     /**
      * The attributes that are mass assignable.
-     *
      * @var array
     */
     protected $fillable = [
         'title',
         'subject',
-        'start',
-        'end',
+        'starttime',
+        'endtime',
         'description',
         'avatar',
         'speaker',
