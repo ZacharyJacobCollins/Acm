@@ -1,5 +1,7 @@
 #Getting started
 
+
+
 #Dependencies
 
 #Colors
@@ -20,6 +22,7 @@ Template out default descriptions and subjects for meetings on manage form / cre
 Allow image upload for avatar
 
 #Phase 2
+dna intro bottom of page http://humaan.com/what-we-do/
 Update sign in page
 Introduction animation, electrion diagram or something.
 Dynamic cards displaying github activity
