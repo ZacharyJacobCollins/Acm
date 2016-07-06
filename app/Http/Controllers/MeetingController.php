@@ -35,7 +35,6 @@ class MeetingController extends Controller
     *   @param {request} POST http request
     */
     public function create(Request $request) {
-        dd($request);
         $newMeeting = new Meeting($request->all()); 
         Meeting::create($request->all());
     }
@@ -47,6 +46,8 @@ class MeetingController extends Controller
     */
     public function reviewMeeting(Request $request) {
         $meeting = new Meeting($request->all());
-        return redirect('/members#meetingreview')->with($meeting, 'meeting');
+        return view('pages.members.ajax.meetingreview', [ 'meeting' => $meeting ]);
     }
+
+    //Maybe like this http://stackoverflow.com/questions/23876224/pre-render-blade-template-return-result-in-ajax
 }

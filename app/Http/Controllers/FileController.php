@@ -44,6 +44,4 @@ class FileController extends Controller
         }
         return view('pages.members.index', array('user'=>Auth::user() ) );
     }
-
-    
 }
