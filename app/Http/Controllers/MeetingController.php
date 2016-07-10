@@ -23,6 +23,15 @@ class MeetingController extends Controller
 
     }
 
+    /** 
+    *   Returns the templated blade schedule file 
+    */
+    public function schedule() {
+        $meetings = Meeting::All();
+        return view('pages.members.ajax.schedule', ['meetings' => $meetings]);
+    }
+
+
 
     /**
     *   @param {id} meeting id to be deleted

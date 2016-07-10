@@ -1,12 +1,17 @@
 <script>
-		//Add listener to window object to watch for hash change
-		window.onhashchange = loadContent;
 		/*
 		*  Loads the correct content based on the current url hash with ajax
 		*/
 		function loadContent() {
 			var hash = window.location.hash.substring(1);
-			ajaxUrl = "/members/ajax/"+hash;
+			
+			//check for special cases to redirect to correct ajax routes
+			if (hash === "schedule") {
+				ajaxUrl = "/meeting/schedule";
+			} else {
+				ajaxUrl = "/members/ajax/"+hash;
+			}
+			
 			ajaxTarget = $('#ajax');
 			console.log(window.location.hash);
 			

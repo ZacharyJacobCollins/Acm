@@ -20,7 +20,7 @@ Route::get('/members/ajax/{type}', 'MembersController@ajax');
 
 Route::group(['prefix' => 'meeting'], function() {
     Route::post('/create', 'MeetingController@create');
-    Route::post('/review', 'MeetingController@reviewMeeting');
+    Route::get('/schedule', 'MeetingController@schedule');
 });
 
 Route::get('/logo', function() {
