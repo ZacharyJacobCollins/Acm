@@ -17,22 +17,19 @@
 
         <h1 class="header center white-text text-darken-4">Our Members</h1>
         <!-- Iterate through members producing a card for each --> 
-        <!-- Start the loop at 1 and do a weird thing to reference each index, subtract 1.  This is for the modulus stuff :/-->
-
-        @foreach ($members as $key=>$member)
+        <!-- Start the loop at 1 and do a weird thing to reference each index, subtract 1.  This is for the modulus stuff --> 
+        @for($i=0; $i < count($members); $i++)
             
-            @if ($key % 4 == 0)
+            @if ($i % 4 == 0 )
                 <div class="row">
             @endif
-            
-            <h1>{{ $key }}</h1>
                     <!-- Card -->
                     <div class="card grey darken-2 col s3">
                         <div class="card-image waves-effect waves-block waves-light">
                           <img class="activator" src="/images/toledo.jpg">
                         </div>
                         <div class="card-content">
-                          <span class="card-title activator grey-text text-darken-4">{{ $member->name }}<i class="material-icons right">more_vert</i></span>
+                          <span class="card-title activator grey-text text-darken-4">{{ $members[$i]->name }}<i class="material-icons right">more_vert</i></span>
                           <p><a href="#">This is a link</a></p>
                         </div>
                         <div class="card-reveal">
@@ -41,11 +38,11 @@
                         </div>
                     </div>
 
-            @if ($key % 4 == 0)
+            @if ( ($i / 4 == 1) || ($i == (count($members)-1)) )
                 </div>
             @endif
         
-       @endforeach
+        @endfor
     
    @include('layouts.footer')
 </div>
