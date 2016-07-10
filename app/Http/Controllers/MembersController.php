@@ -17,7 +17,6 @@ class MembersController extends Controller
     //     $this->middleware('auth');
     // }
 
-
     public function index() {
         return view('pages.members.index');
     }
@@ -28,5 +27,4 @@ class MembersController extends Controller
     public function ajax($page) {
         return view("pages.members.ajax.".$page);
     }
-
 }

@@ -10,7 +10,6 @@ use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 
 class AuthController extends Controller
 {
-
     use AuthenticatesAndRegistersUsers, ThrottlesLogins;
 
     /**
@@ -57,6 +56,7 @@ class AuthController extends Controller
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            
         ]);
     }
 }

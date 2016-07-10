@@ -33,7 +33,7 @@
                         <!-- Card -->
                         <div class="card grey darken-2 col l3 offset-l1">
                             <div class="card-image waves-effect waves-block waves-light">
-                              <img class="activator" src="/images/toledo.jpg">
+                              <img class="activator" src="/images/avatars/{{ $members[$i]->avatar }}">
                             </div>
                             <div class="card-content">
                               <span class="card-title activator grey-text text-darken-4">{{ $members[$i]->name }}<i class="material-icons right">more_vert</i></span>
