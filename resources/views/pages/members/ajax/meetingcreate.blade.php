@@ -4,7 +4,7 @@
 <div class="section">
     <h2> Create a new meeting </h2>
     <div class="row">
-    <form class="col s12" enctype="multipart/form-data" action="/meeting/review" method="POST">
+    <form class="col s12" enctype="multipart/form-data" action="/meeting/create" method="POST">
         {!! csrf_field() !!}
         <div class="row">
             <div class="input-field col s12">

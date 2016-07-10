@@ -22,7 +22,7 @@
                     <li class="bold"><a class="collapsible-header waves-effect waves-purple darken-1">Meetings</a>
                         <div class="collapsible-body">
                         <ul>
-                            <li><a href="#signin">Sign in</a></li>
+                            <li><a href="#signin">Check in</a></li>
                         </ul>
                         <ul>
                             <li><a href="#schedule">Schedule</a></li>

@@ -12,7 +12,8 @@ class MeetingController extends Controller
 {
     //Lists all current meetings
     public function index() {
-
+        $meetings = Meeting::All();
+        return view('pages.meetings.index', ['meetings', $meetings]);
     }
 
     /** 
@@ -27,7 +28,7 @@ class MeetingController extends Controller
     *   @param {id} meeting id to be deleted
     */
     public function delete($id) {
-
+        
     }
 
     /**
@@ -35,19 +36,9 @@ class MeetingController extends Controller
     *   @param {request} POST http request
     */
     public function create(Request $request) {
+        $meetingTitle = $request->input('title');
         $newMeeting = new Meeting($request->all()); 
         Meeting::create($request->all());
+        return redirect('/members#meetingcreate');
     }
-
-    /**
-    *   Review meeting stuff before creating it/placing it in database/sending out emails
-    *   Redirect via ajax with hash
-    *   @param {request} POST http request
-    */
-    public function reviewMeeting(Request $request) {
-        $meeting = new Meeting($request->all());
-        return view('pages.members.ajax.meetingreview', [ 'meeting' => $meeting ]);
-    }
-
-    //Maybe like this http://stackoverflow.com/questions/23876224/pre-render-blade-template-return-result-in-ajax
 }

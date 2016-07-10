@@ -28,4 +28,5 @@ class MembersController extends Controller
     public function ajax($page) {
         return view("pages.members.ajax.".$page);
     }
+
 }

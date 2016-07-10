@@ -22,5 +22,4 @@ Route::get('/members/ajax/{type}', 'MembersController@ajax');
 Route::group(['prefix' => 'meeting'], function() {
     Route::post('/create', 'MeetingController@create');
     Route::post('/review', 'MeetingController@reviewMeeting');
-    
 });
