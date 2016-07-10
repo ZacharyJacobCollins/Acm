@@ -67,7 +67,7 @@ const phrases = [
   'But if you take the red pill',
   'you stay in Wonderland, ',
   'and together',
-  'we see how deep the rabbit hole goes.',
+  'We see how deep the rabbit hole goes.',
   'Eastern Michigan Acm.',
 ]
 

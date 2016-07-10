@@ -21,7 +21,7 @@
     @include('pages.welcome.hackathon')
     @include('pages.welcome.timeline')
     @include('pages.welcome.members')
-    @include('pages.welcome.join')
+    @include('pages.welcome.register')
     @include('pages.welcome.whoweare')
 
  
