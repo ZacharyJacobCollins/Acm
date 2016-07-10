@@ -75,21 +75,15 @@ svg {
 }
 
 .logo-svg:hover .logo-m-left-1 {
-    fill: #EC008C;
+    fill: #006600;
 }
 
 .logo-svg:hover .logo-m-left-2 {
     opacity: 0.4;
-    fill: #EC008C;
+    fill: #006600;
 }
-
-.logo-svg:hover .logo-m-right {
-    fill: #F9ED32;
-    transition-delay: 333ms;
-}
-
 .logo-svg:hover .logo-type-group .logo-type {
-    fill: white;
+    fill: grey;
     opacity: 1;
 }
 
@@ -113,22 +107,6 @@ svg {
     transition-delay: 527.25ms;
 }
 
-.logo-svg:hover .logo-type-motel-m {
+.logo-svg:hover .logo-type-acm-m {
     transition-delay: 444ms;
-}
-
-.logo-svg:hover .logo-type-motel-o {
-    transition-delay: 471.75ms;
-}
-
-.logo-svg:hover .logo-type-motel-t {
-    transition-delay: 499.5ms;
-}
-
-.logo-svg:hover .logo-type-motel-e {
-    transition-delay: 527.25ms;
-}
-
-.logo-svg:hover .logo-type-motel-l {
-    transition-delay: 555ms;
 }

@@ -1,6 +1,8 @@
 <!-- Who we are tab -->
 <div id="whoweare" class="col s12">
 
+        @include('components.hoverlogo')
+
         <!-- Banner -->    
         <div class="section no-pad-bot black" id="index-banner">
           <div class="container">
