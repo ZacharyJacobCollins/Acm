@@ -8,41 +8,51 @@
           </div>
         </div>
 
-        <div class="col s2 offset-s5">
-              <a href="/login" class="header center waves-effect waves-light btn green darken-4">Sign In</a>
-              <a href="/members#home" class="header center waves-effect waves-light btn green darken-4">Members Page</a>
+
+        </br></br></br>
+
+
+        <div class="center-align section">
+            <a href="/members#home" class="header center waves-effect waves-light btn green darken-4">Login</a>
         </div>
 
+
+        </br></br></br>
       
-
-        <h1 class="header center white-text text-darken-4">Our Members</h1>
-        <!-- Iterate through members producing a card for each --> 
-        <!-- Start the loop at 1 and do a weird thing to reference each index, subtract 1.  This is for the modulus stuff --> 
-        @for($i=0; $i < count($members); $i++)
-            
-            @if ($i % 4 == 0 )
-                <div class="row">
-            @endif
-                    <!-- Card -->
-                    <div class="card grey darken-2 col s3">
-                        <div class="card-image waves-effect waves-block waves-light">
-                          <img class="activator" src="/images/toledo.jpg">
-                        </div>
-                        <div class="card-content">
-                          <span class="card-title activator grey-text text-darken-4">{{ $members[$i]->name }}<i class="material-icons right">more_vert</i></span>
-                          <p><a href="#">This is a link</a></p>
-                        </div>
-                        <div class="card-reveal">
-                          <span class="card-title grey-text text-darken-4">Jeremy Karbowski with EEEE<i class="material-icons right">close</i></span>
-                          <p>Here is some more information about this product that is only revealed once clicked on.</p>
-                        </div>
-                    </div>
-
-            @if ( ($i / 4 == 1) || ($i == (count($members)-1)) )
-                </div>
-            @endif
         
-        @endfor
+        <!-- Members container --> 
+        <div class="section">  
+            <!-- Iterate through members producing a card for each --> 
+            @for($i=0; $i < count($members); $i++)
+                
+                @if ($i % 3 == 0 )
+                    <div class="row">
+                @endif
+
+                  <div class="container">
+                        <!-- Card -->
+                        <div class="card grey darken-2 col l3 offset-l1">
+                            <div class="card-image waves-effect waves-block waves-light">
+                              <img class="activator" src="/images/toledo.jpg">
+                            </div>
+                            <div class="card-content">
+                              <span class="card-title activator grey-text text-darken-4">{{ $members[$i]->name }}<i class="material-icons right">more_vert</i></span>
+                              <p><a href="#">{{ $members[$i]->languages }}</a></p>
+                            </div>
+                            <div class="card-reveal">
+                              <span class="card-title grey-text text-darken-4">{{ $members[$i]->name }}<i class="material-icons right">close</i></span>
+                              <p>{{ $members[$i]->bio }}</p>
+                            </div>
+                        </div>
+                  </div>
+
+                <!-- Spit out a div here on stuff--> 
+                @if ( ($i / 3 == 1) || ($i == (count($members)-1)) )
+                    </div>
+                @endif
+            
+            @endfor
+        </div>
     
    @include('layouts.footer')
 </div>

@@ -19,6 +19,8 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('avatar')->default('default.jpg');
             $table->string('resume')->default('resume.pdf');
+            $table->string('bio')->default('Student at Eastern Michigan University Studying Computer Science');
+            $table->string('languages')->default('Golang, Ruby, Javascript, PHP/Laravel, Java, C#');
             $table->rememberToken();
             $table->timestamps();
         });
