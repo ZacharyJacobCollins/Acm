@@ -30,18 +30,23 @@
 							<label class="fs-field-label fs-anim-upper" for="q1">Enter your name</label>
 							<input class="fs-anim-lower" id="q1" name="name" type="text" placeholder="(First and Last)" required="true" style="color: #000">
 						</li>
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q2" data-info="For general organization purposes">What's your email address?</label>
-							<input class="fs-anim-lower" id="q2" name="email" type="email" placeholder="Email" required="true" style="color: #000">
+						<li class="fs-field-label fs-anim-upper">
+							<label class="fs-field-label fs-anim-upper" for="q2">Choose a Username</label>
+							<input class="fs-anim-lower" id="q2" name="username" type="text" placeholder="Must be unique" required="true" style="color: #000">
 						</li>
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q3" data-info="At least eight characters">Enter a password</label>
-							<input class="fs-anim-lower" id="q3" name="password" type="password" placeholder="Password" required="true" style="color: #000">
+							<label class="fs-field-label fs-anim-upper" for="q3" data-info="For general organization purposes">What's your email address?</label>
+							<input class="fs-anim-lower" id="q3" name="email" type="email" placeholder="Email" required="true" style="color: #000">
 						</li>
 						<li>
-							<label class="fs-field-label fs-anim-upper" for="q4" data-info="At least eight characters">Please re-enter your password</label>
-							<input class="fs-anim-lower" id="q4" name="password_confirmation" type="password" placeholder="At least eight characters" required="true" style="color: #000">
+							<label class="fs-field-label fs-anim-upper" for="q4" data-info="At least eight characters">Enter a password</label>
+							<input class="fs-anim-lower" id="q4" name="password" type="password" placeholder="Password" required="true" style="color: #000">
 						</li>
+						<li>
+							<label class="fs-field-label fs-anim-upper" for="q5" data-info="At least eight characters">Please re-enter your password</label>
+							<input class="fs-anim-lower" id="q5" name="password_confirmation" type="password" placeholder="At least eight characters" required="true" style="color: #000">
+						</li>
+						
 
 						<!--	<li>  
 							<label class="fs-field-label fs-anim-upper" for="q4">Upload a picture of yourself, this will be public facing, so keep it professional-ish</label>

@@ -21,7 +21,8 @@ class FileController extends Controller
     public function updateAvatar(Request $request) {
         if($request->hasFile('avatar')) {
             $avatar = $request ->file('avatar');
-            $filename =  Auth::user()->name. "Avatar." . $avatar->getClientOriginalExtension();
+            //Use username to name the picture, because it is unique.
+            $filename =  Auth::user()->username. "Avatar." . $avatar->getClientOriginalExtension();
             $filename = str_replace(' ', '', $filename); 
             Image::make($avatar)->resize(300, 300)->save( public_path('images/avatars/' . $filename) );
             $user = Auth::user();
