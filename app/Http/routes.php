@@ -1,10 +1,9 @@
 <?php
 
-Route::get('/', function () {
-    return view('pages.welcome.index');
-});
-
 Route::auth();
+
+Route::get('/', 'WelcomeController@index');
+
 Route::get('/home', 'HomeController@index');
 
 Route::auth();

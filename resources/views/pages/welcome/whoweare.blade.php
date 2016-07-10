@@ -29,7 +29,8 @@
         </div>
         <!-- /Mission -->
 
-
       @include('partials.cardrow')
+      @include('layouts.footer')
+
 </div>
 

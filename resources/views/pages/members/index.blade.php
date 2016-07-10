@@ -63,6 +63,6 @@
 
     </div>
 
-<!-- Ajax loader -->
+<!-- Ajax loader and javascripts -->
 @include('js.ajaxloader')
 @include('layouts.scripts')

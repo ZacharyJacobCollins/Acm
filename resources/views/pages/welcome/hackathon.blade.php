@@ -1,18 +1,15 @@
- <!-- Hackathon tab -->
-  <div id="hackathon" class="col s12">
+<!-- Hackathon tab -->
+<div id="hackathon" class="col s12">
 
-        <!-- Banner -->    
-        <div class="section no-pad-bot black" id="index-banner">
-          <div class="container">
-            <h1 class="header center green-text text-darken-4">Hackathon</h1>
-            <div class="row center">
-              This will be a countdown timer here
-            </div>
-            </br></br></br></br></br>
-            </br></br></br></br></br>
-            </br></br></br></br></br>
-          </div>
+    <!-- Banner -->    
+    <div class="section no-pad-bot black" id="index-banner">
+        <div class="container">
+        <h1 class="header center green-text text-darken-4"><span class="white-text">Eastern Michigan</span> Acm</h1>
         </div>
+    </div>
+
+@include('layouts.footer')
+
 
 </div>
 
