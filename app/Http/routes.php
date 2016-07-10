@@ -22,3 +22,7 @@ Route::group(['prefix' => 'meeting'], function() {
     Route::post('/create', 'MeetingController@create');
     Route::post('/review', 'MeetingController@reviewMeeting');
 });
+
+Route::get('/logo', function() {
+    return view('components.hoverlogo');
+});
