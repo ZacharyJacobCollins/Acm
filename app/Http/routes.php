@@ -35,6 +35,7 @@ Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
     Route::get('/admin', function()
     {
         return view('pages.admin.home');
+        
     });
 
 });

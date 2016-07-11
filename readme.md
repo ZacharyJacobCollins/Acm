@@ -1,4 +1,11 @@
 #Getting started
+Make sure you have php, composer, and laravel installed as per the laravel documentation.  
+
+Using Bash, cd into the cloned directory and run the following commands...
+
+composer install       ---->   Installs all the php project dependencies for ya
+
+php artisan migrate    ---->  Creates the needed databases/tables and stuff
 
 
 
@@ -21,6 +28,7 @@ If no ajax content found display error in members page
 Template out default descriptions and subjects for meetings on manage form / creating a new meeting form
 Allow image upload for avatar
 Emmet style programming resources
+Do not display admin account on members page
 
 #Phase 2
 dna intro bottom of page http://humaan.com/what-we-do/
