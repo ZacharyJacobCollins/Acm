@@ -20,7 +20,7 @@ class AdminUserSeeder extends Seeder
             'resume' => 'resume.pdf',
             'bio' => 'I am the admin',
             'languages' => 'Binary, and some node js',
-            'password' => bcrypt('secret'),
+            'password' => bcrypt('EasternAcm13'),
         ]);
     }
 }

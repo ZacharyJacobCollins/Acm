@@ -7,7 +7,7 @@ composer install       ---->   Installs all the php project dependencies for ya
 
 php artisan migrate    ---->  Creates the needed databases/tables and stuff
 
-
+php artisan db:seed --class=AdminUserSeeder    ---->  Creates the admin user.  name: admin, username: admin, email: admin@gmail.com, password: EasternAcm13
 
 #Dependencies
 
