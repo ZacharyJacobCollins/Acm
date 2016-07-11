@@ -6,8 +6,8 @@
           <div class="container">
               <div class="row center">
                   <div class="s12">
-                      <h1 class="header center green-text text-darken-4"><span class="white-text">Eastern Michigan</span> Acm</h1>
-                      @include('components.hoverlogo')
+                      <h1 class="header center green-text text-darken-4 light"><span class="white-text thin">Eastern Michigan</span> Acm</h1>
+                      @include('components.hoverlogo-slide')
                   </div>
               </div>
           </div>

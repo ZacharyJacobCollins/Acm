@@ -39,3 +39,4 @@ Google map api on the meeting place
 Automated emails for creating meetings, rsvps etc.
 When something tosses an error don't clear a form, keep the previous stuff there.  
 Review and accept applications screen.  Ask for members to complete fizzbuzz
+Trigger the join  intro thing when a user clicks on that tab.  Just check the hash

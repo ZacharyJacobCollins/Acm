@@ -77,14 +77,6 @@ svg {
     transition-delay: 444ms;
 }
 
-.logo-svg:hover .logo-type-code-o {
-    transition-delay: 471.75ms;
-}
-
-.logo-svg:hover .logo-type-code-d {
-    transition-delay: 499.5ms;
-}
-
 .logo-svg:hover .logo-type-code-e {
     transition-delay: 527.25ms;
 }

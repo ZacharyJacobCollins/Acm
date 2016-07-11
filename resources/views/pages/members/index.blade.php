@@ -13,9 +13,7 @@
     <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
         <!-- Side nav -->
         <ul id="nav-mobile" class="side-nav fixed">
-            <div class="container section">
-                <img class="responsive-img small-logo" src="/images/logos/acm.png">
-            </div>
+            @include('components.hoverlogo')
             <li class="bold"><a href="#home" class="waves-effect waves-purple">Home</a></li>
             <li class="no-padding">
                 <ul class="collapsible collapsible-accordion">
@@ -64,5 +62,4 @@
     </div>
 
 <!-- Ajax loader and javascripts -->
-@include('js.ajaxloader')
 @include('layouts.scripts')

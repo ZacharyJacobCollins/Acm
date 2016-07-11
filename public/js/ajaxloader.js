@@ -1,4 +1,3 @@
-<script>
 
 		//Add listener to window object to watch for hash change
 		window.onhashchange = loadContent;
@@ -48,5 +47,3 @@
 
 		//load content on first visit
 		loadContent();
-
-</script>

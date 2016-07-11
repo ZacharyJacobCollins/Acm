@@ -4,7 +4,7 @@
     <div class="section no-pad-bot black" id="index-banner">
         <div class="container">
             <div class="row center">
-                <div class="s12">@include('components.hoverlogo')</div>
+                <div class="s12">@include('components.hoverlogo-slide')</div>
             </div>
         </div>
     </div>

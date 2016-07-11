@@ -1,3 +1,9 @@
+/*Custom font*/
+html {
+    /*font-family: GillSans, Calibri, Trebuchet, sans-serif;*/
+    /*font-weight: 200;*/
+}
+
 .splash-background {
     background-image: url(/img/intro-bg.jpg);
     background-color: #000;
