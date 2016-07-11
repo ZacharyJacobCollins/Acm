@@ -26,3 +26,14 @@ Route::group(['prefix' => 'meeting'], function() {
 Route::get('/logo', function() {
     return view('components.hoverlogo');
 });
+
+
+//Admin routes, only accessible by admin users
+Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
+{
+    Route::get('/admin', function()
+    {
+        return view('pages.admin');
+    });
+
+});
