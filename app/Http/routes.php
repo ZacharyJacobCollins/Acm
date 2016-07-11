@@ -2,21 +2,19 @@
 
 Route::auth();
 
+Route::get('/denied', function()
+{
+    return view('pages.admin.denied');
+});
+
 Route::get('/', 'WelcomeController@index');
 
 Route::get('/home', 'HomeController@index');
 
-Route::auth();
-
-Route::get('/home', 'HomeController@index');
-
-Route::get('/members', 'MembersController@index');
 
 Route::group(['prefix' => 'file'], function() {
     Route::post('/avatar', 'FileController@updateAvatar');
 });
-
-Route::get('/members/ajax/{type}', 'MembersController@ajax');
 
 Route::group(['prefix' => 'meeting'], function() {
     Route::post('/create', 'MeetingController@create');
@@ -27,13 +25,16 @@ Route::get('/logo', function() {
     return view('components.hoverlogo');
 });
 
+Route::get('/members', 'MembersController@index');
+Route::get('/members/ajax/{type}', 'MembersController@ajax');
 
-//Admin routes, only accessible by admin users
+
+//Admin routes
 Route::group(['middleware' => 'App\Http\Middleware\AdminMiddleware'], function()
 {
     Route::get('/admin', function()
     {
-        return view('pages.admin');
+        return view('pages.admin.home');
     });
 
 });

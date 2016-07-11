@@ -18,7 +18,7 @@ class AdminMiddleware
         //If user is not an admin redirect to home.
         if ($request->user()->type != 'A')
         {
-            return redirect('/');
+            return redirect('/denied');
         }
 
         return $next($request);
