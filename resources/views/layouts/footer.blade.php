@@ -22,5 +22,8 @@
   </div>
 
   <script type="text/javascript" src="js/materialize.min.js"></script>
+  
+  <!-- Paralax footer initialization -->
+  <script>$(document).ready(function(){$('.parallax').parallax();});</script>
 </footer>
             

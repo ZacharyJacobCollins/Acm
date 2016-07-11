@@ -20,6 +20,7 @@ Meeting sign in and attendance
 If no ajax content found display error in members page
 Template out default descriptions and subjects for meetings on manage form / creating a new meeting form
 Allow image upload for avatar
+Emmet style programming resources
 
 #Phase 2
 dna intro bottom of page http://humaan.com/what-we-do/
@@ -37,3 +38,4 @@ Questions and answers among members
 Google map api on the meeting place
 Automated emails for creating meetings, rsvps etc.
 When something tosses an error don't clear a form, keep the previous stuff there.  
+Review and accept applications screen.  Ask for members to complete fizzbuzz

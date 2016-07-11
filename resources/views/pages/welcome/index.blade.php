@@ -12,16 +12,18 @@
           <li class="tab col s3"><a class="green-text" href="#hackathon">Hackathon</a></li>
           <li class="tab col s3"><a class="green-text" href="#join">Join</a></li>
           <li class="tab col s3"><a class="green-text" href="#timeline">Schedule</a></li>
+
         </ul>
       </div>
 
       <!-- Include tabbed pages -->
       @include('pages.welcome.employers')
       @include('pages.welcome.hackathon')
-      @include('pages.welcome.timeline')
+      @include('pages.welcome.schedule')
       @include('pages.welcome.members')
       @include('pages.welcome.register')
       @include('pages.welcome.whoweare')
+
 
   </body>
   

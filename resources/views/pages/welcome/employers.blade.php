@@ -2,11 +2,13 @@
 <div id="employers" class="col s12">
     
     <!-- Banner -->    
-      <div class="section no-pad-bot black" id="index-banner">
+    <div class="section no-pad-bot black" id="index-banner">
         <div class="container">
-          <h1 class="header center green-text text-darken-4"><span class="white-text">Eastern Michigan</span> Acm</h1>
+            <div class="row center">
+                <div class="s12">@include('components.hoverlogo')</div>
+            </div>
         </div>
-      </div>
+    </div>
 
   @include('layouts.footer')
 

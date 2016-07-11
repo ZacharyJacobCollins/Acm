@@ -1,12 +1,15 @@
 <!-- Members tab -->
   <div id="members" class="col s12">
 
-          <!-- Banner -->    
+         <!-- Banner -->    
         <div class="section no-pad-bot black" id="index-banner">
-          <div class="container">
-            <h1 class="header center green-text text-darken-4"><span class="white-text">Eastern Michigan</span> Acm</h1>
-          </div>
+            <div class="container">
+                <div class="row center">
+                    <div class="s12">@include('components.hoverlogo')</div>
+                </div>
+            </div>
         </div>
+
 
 
         </br></br></br>
@@ -18,6 +21,10 @@
 
 
         </br></br></br>
+
+        <!-- Member spotlight --> 
+             @include('partials.cardrow')
+        <!-- /Member spotlight --> 
       
         
         <!-- Members container --> 
