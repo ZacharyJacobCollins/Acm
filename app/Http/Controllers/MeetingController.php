@@ -28,9 +28,8 @@ class MeetingController extends Controller
     */
     public function schedule() {
         $meetings = Meeting::All();
-        return view('pages.members.ajax.schedule', ['meetings' => $meetings]);
+        return view('pages.members.ajax.meetingschedule', ['meetings' => $meetings]);
     }
-
 
 
     /**
