@@ -19,6 +19,7 @@ Route::group(['prefix' => 'file'], function() {
 Route::group(['prefix' => 'meeting'], function() {
     Route::post('/create', 'MeetingController@create');
     Route::get('/schedule', 'MeetingController@schedule');
+    Route::match(['post', 'get'], '/checkin', 'Meetingcontroller@checkIn');
 });
 
 Route::get('/logo', function() {

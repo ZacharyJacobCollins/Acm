@@ -10,11 +10,7 @@
             </div>
         </div>
 
-
-
         </br></br></br>
-
-
 
         <div class="center-align section">
             <a href="/members#home" class="header center waves-effect waves-light btn green darken-4">Login</a>
@@ -23,16 +19,11 @@
 
         </br></br></br>
 
-        <!-- Member spotlight --> 
-             @include('partials.cardrow')
-        <!-- /Member spotlight --> 
-      
-        
         <!-- Members container --> 
         <div class="section">  
             <!-- Iterate through members producing a card for each --> 
             @for($i=0; $i < count($members); $i++)
-                
+
                 @if ($i % 3 == 0 )
                     <div class="row">
                 @endif
@@ -40,7 +31,7 @@
                   <div class="container">
                         <!-- Card -->
                         <div class="card grey darken-2 col l3 offset-l1">
-                            <div class="card-image waves-effect waves-block waves-light">
+                            <div class="card-image">
                               <img class="activator" src="/images/avatars/{{ $members[$i]->avatar }}">
                             </div>
                             <div class="card-content">
@@ -64,5 +55,3 @@
     
    @include('layouts.footer')
 </div>
-
-

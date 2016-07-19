@@ -14,10 +14,11 @@ class CreateMeetingsTable extends Migration
     {
         Schema::create('meetings', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('title');
+            $table->string('title')->unique();
             $table->string('subject');
             $table->string('starttime');
             $table->string('endtime');
+            $table->string('attendingMembers')->default('');
             $table->string('description')->default('Acm meeting and workshop');
             $table->string('speaker')->default('Acm');
             $table->string('avatar')->default('default.jpg');

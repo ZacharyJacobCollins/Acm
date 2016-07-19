@@ -18,5 +18,6 @@ class Meeting extends Model
         'description',
         'avatar',
         'speaker',
+        'attendingMembers'        
     ];
 }

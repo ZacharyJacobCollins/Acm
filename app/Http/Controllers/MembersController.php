@@ -18,13 +18,13 @@ class MembersController extends Controller
     // }
 
     public function index() {
-        return view('pages.members.index');
+        return view('pages.members.index', ['color' => $this->color]);
     }
 
     /**
     *  @param the page requested by the url   
     */
     public function ajax($page) {
-        return view("pages.members.ajax.".$page);
+        return view("pages.members.ajax.".$page, ['color'=>$this->color]);
     }
 }

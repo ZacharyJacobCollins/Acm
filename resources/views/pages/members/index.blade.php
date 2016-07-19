@@ -11,17 +11,17 @@
     </div>
 
     <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
-        <!-- Side nav -->
-        <ul id="nav-mobile" class="side-nav fixed">
+          <ul id="nav-mobile" class="side-nav fixed">
             @include('components.hoverlogo')
+            </br></br>
             <li class="bold"><a href="#home" class="waves-effect waves-purple">Home</a></li>
             <li class="no-padding">
                 <ul class="collapsible collapsible-accordion">
-                    <li class="bold"><a class="collapsible-header waves-effect waves-purple darken-1">Meetings</a>
+                    <li class="bold"><a class="collapsible-header waves-effect {{ $color->mainWaves }}">Meetings</a>
                         <div class="collapsible-body">
                         <ul>
-                            <li><a href="#signin">Check in</a></li>
-                        </ul>
+                            <li><a href="#meetingcheckin">Check in</a></li>
+                        </ul> 
                         <ul>
                             <li><a href="#schedule">Schedule</a></li>
                         </ul>
@@ -53,8 +53,7 @@
             </li>
             <li class="bold"><a href="#profile" class="waves-effect waves-purple">Profile Settings</a></li>
         </ul>
-        <!-- /Side nav -->
-        
+                
         <div id="ajax" class="row">
             <!-- Ajax content here -->
         </div>

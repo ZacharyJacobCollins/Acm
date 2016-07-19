@@ -11,6 +11,9 @@ switch(hash) {
 	case "schedule" : 
 		ajaxUrl = '/meeting/schedule';
 		break;
+	case "meetingcheckin" : 
+		ajaxUrl = '/meeting/checkin';
+		break;
 	default: 
 		ajaxUrl= '/members/ajax/'+hash;				
 }
