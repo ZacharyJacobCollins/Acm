@@ -32,6 +32,9 @@
                     <li><a href="#programming">Programming</a></li>
                 </ul>
                 <ul>
+                    <li><a href="http://docs.emmet.io/cheat-sheet/">Snippets</a></li>
+                </ul>
+                <ul>
                     <li><a href="#resumes">Resume Help</a></li>
                 </ul>
                 <ul>
