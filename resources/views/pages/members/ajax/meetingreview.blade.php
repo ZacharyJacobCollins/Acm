@@ -1,6 +1,6 @@
 <!-- if no meeting in session you done messed up -->
 
-<h1 class="green-text text-lighten-1"> Meeting Review </h1>
+<h1 class="{{ $color->mainText }}"> Meeting Review </h1>
 <div class="divider"></div>
 
 <form method="POST" action="/meeting/create">

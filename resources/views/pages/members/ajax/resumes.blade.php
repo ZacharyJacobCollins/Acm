@@ -1,2 +1,2 @@
-<h1 class="green-text text-lighten-1"> Resumes </h1>
+<h1 class="{{ $color->mainText }}"> Resumes </h1>
 <div class="divider"></div>

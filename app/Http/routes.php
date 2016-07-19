@@ -27,6 +27,7 @@ Route::get('/logo', function() {
 });
 
 Route::get('/members', 'MembersController@index');
+Route::get('/members/courses', 'MembersController@index');
 Route::get('/members/ajax/{type}', 'MembersController@ajax');
 
 

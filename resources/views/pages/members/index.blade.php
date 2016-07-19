@@ -14,7 +14,7 @@
           <ul id="nav-mobile" class="side-nav fixed">
             @include('components.hoverlogo')
             </br></br>
-            <li class="bold"><a href="#home" class="waves-effect waves-purple">Home</a></li>
+            <li class="bold"><a href="#home" class="waves-effect {{ $color->mainWaves }}">Home</a></li>
             <li class="no-padding">
                 <ul class="collapsible collapsible-accordion">
                     <li class="bold"><a class="collapsible-header waves-effect {{ $color->mainWaves }}">Meetings</a>
@@ -30,16 +30,19 @@
                         </ul>
                         </div>
                     </li>
-                    <li class="bold"><a class="collapsible-header waves-effect waves-purple">Resources</a>
+                    <li class="bold"><a class="collapsible-header waves-effect {{ $color->mainWaves }}">Resources</a>
                         <div class="collapsible-body">
                         <ul>
-                            <li><a href="#courses">Class ratings</a></li>
+                            <li><a href="#courses">Courses</a></li>
                         </ul>
                         <ul>
                             <li><a href="#exams">Tests and quizzes</a></li>
                         </ul>
                         <ul>
                             <li><a href="#programming">Programming</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="http://docs.emmet.io/cheat-sheet/">Snippets</a></li>
                         </ul>
                         <ul>
                             <li><a href="#resumes">Resume Help</a></li>
