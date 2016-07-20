@@ -26,5 +26,6 @@
 
 
   </body>
-  
+
+  <!-- Trigger hover on tab 1 click -->
 </html>

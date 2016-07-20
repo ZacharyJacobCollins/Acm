@@ -2,7 +2,7 @@
     <link type="text/css" rel="stylesheet" href="/css/hoverlogo.css" media="screen,projection"/>
 </head>
 
-<svg class="logo-svg" width="338px" height="76px">
+<svg id="hoverlogo-slide" class="logo-svg" width="338px" height="76px">
 	<g>
 		<g class="logo-type-group">
 			<path class="logo-type logo-type-code-c" d="M194.869, 50.081c-1.965-3.43-5.682-5.538-9.968-5.538c-6.467, 0-11.577, 
@@ -24,4 +24,5 @@
 	<path class="logo-m-left-1" d="M111.328,7h13.763L95.686,69.053H80.729L111.328,7z"/>
 	<!-- /A -->
 </svg>
+
 

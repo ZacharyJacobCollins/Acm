@@ -1,7 +1,8 @@
 <!-- Join tab -->
 <div id="join" class="col s12">
-
-      <!-- Banner -->    
+        
+     <!-- Banner -->    
+     </br></br></br>
      <div class="section no-pad-bot black" id="index-banner">
         <div class="container">
             <div class="row center">
@@ -18,7 +19,7 @@
               <div class="row center"> 
                 
                 <div class="s12">
-                  <h3 class="textscramble light white-text"></h3>
+                  <h3 class="textscramble thin white-text"></h3>
                 </div>
                 
                 </br>

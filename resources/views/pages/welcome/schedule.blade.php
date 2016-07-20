@@ -1,6 +1,7 @@
 <div id="timeline" class="col s12">
-   
+
     <!-- Banner -->    
+    </br></br></br>
     <div class="section no-pad-bot black" id="index-banner">
         <div class="container">
             <div class="row center">

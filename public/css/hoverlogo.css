@@ -1,7 +1,3 @@
-svg {
-    margin-top: 80px;
-}
-
 [class*="logo-"] {
     -webkit-transition: all 333ms ease-out;
     -moz-transition: all 333ms ease-out;
@@ -64,6 +60,7 @@ svg {
     opacity: 0.4;
     fill: #006600;
 }
+
 .logo-svg:hover .logo-type-group .logo-type {
     fill: grey;
     opacity: 1;
