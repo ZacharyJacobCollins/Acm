@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
+use App\Course;
 
 class MembersController extends Controller
 {
@@ -19,6 +20,16 @@ class MembersController extends Controller
 
     public function index() {
         return view('pages.members.index', ['color' => $this->color]);
+    }
+
+
+    public function courses(Request $request) {
+         if ($request->isMethod('post')) {
+            //do stuff
+        } else {
+            $courses = Course::All();
+            return view('pages.members.ajax.courses', ['color' => $this->color, 'courses' => $courses]);
+        }
     }
 
     /**

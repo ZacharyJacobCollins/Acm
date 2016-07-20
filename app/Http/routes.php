@@ -26,9 +26,11 @@ Route::get('/logo', function() {
     return view('components.hoverlogo');
 });
 
-Route::get('/members', 'MembersController@index');
-Route::get('/members/courses', 'MembersController@index');
-Route::get('/members/ajax/{type}', 'MembersController@ajax');
+Route::group(['prefix' => 'members'], function() {
+    Route::get('/', 'MembersController@index');
+    Route::get('/ajax/{type}', 'MembersController@ajax');
+    Route::match(['post', 'get'], '/courses', 'MembersController@courses');
+});
 
 
 //Admin routes
