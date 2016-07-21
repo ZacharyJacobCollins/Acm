@@ -2,6 +2,7 @@
 <div id="employers" class="col s12">
     
 
+        
         <!-- Mission -->
         <div class="section no-pad-bot black" id="index-banner">
             <div class="container">
@@ -11,12 +12,7 @@
             </div>
             </div>
         </div>
-
-        
-        <!-- /Paralax-->
-        <div class="parallax-container" id="index-banner">
-            <div class="parallax"><img src="images/backgrounds/shadowycircuitrysmall.jpg"></div>
-        </div>
+      
 
   @include('layouts.footer')
 

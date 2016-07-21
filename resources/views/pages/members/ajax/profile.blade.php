@@ -1,1 +1,1 @@
-@include('forms.image')
+@include('forms.imageForm')

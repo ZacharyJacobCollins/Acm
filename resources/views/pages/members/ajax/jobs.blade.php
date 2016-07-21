@@ -1,2 +1,3 @@
-<h1 class="green-text text-lighten-1"> Jobs and connections </h1>
+<h1 class="{{ $color->mainText}}"> Job Listings </h1>
 <div class="divider"></div>
+

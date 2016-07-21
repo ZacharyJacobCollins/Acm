@@ -17,7 +17,8 @@ class WelcomeController extends Controller
         $members = User::All();
 
         return view('pages.welcome.index', [
-            'members' => $members
+            'members' => $members, 
+            'color' => $this->color
         ]);
 
     }

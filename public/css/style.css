@@ -1,4 +1,5 @@
 /*Custom font*/
+
 html {
     /*font-family: GillSans, Calibri, Trebuchet, sans-serif;*/
     /*font-weight: 200;*/
@@ -21,4 +22,8 @@ html {
 .loader {
     margin-top: 30%;
     margin-left: 50%;
+}
+
+th {
+    min-width: 60px;
 }

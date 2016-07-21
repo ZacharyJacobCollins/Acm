@@ -5,12 +5,12 @@
     <div class="section no-pad-bot black" id="index-banner">
         <div class="container">
             <div class="row center">
-                <div class="s12">@include('components.hoverlogo-slide')</div>
+                <h1 class="header center {{ $color->lightText }} thin">What are we doing?</h1>
             </div>
         </div>
     </div>
 
-    @include('partials.timeline')
+    @include('components.timeline')
     @include('layouts.footer')
 
 </div>
