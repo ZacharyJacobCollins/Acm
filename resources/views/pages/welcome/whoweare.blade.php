@@ -7,7 +7,7 @@
                 <div class="row center">
                     <div class="s12">
                         <h1 class="header center green-text text-darken-4 light"><span class="white-text thin">Eastern Michigan</span> Acm</h1>
-                        <h5 class="header center white-text thin"><span>  Innovators.  Thinkers. Doers. <span class="green-text text-darken-4 light"> Computer Scientists. </span></h3>
+                        <h5 class="header center white-text thin"> Innovators.  Thinkers. Doers. <span class="green-text text-darken-4 light"> Computer Scientists. </span></h5>
                         </br></br></br>
                         @include('components.hoverlogo-slide')
                         </br></br></br>
