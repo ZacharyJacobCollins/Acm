@@ -16,4 +16,7 @@
     <!-- Custom CSS -->
     <link type="text/css" rel="stylesheet" href="/css/style.css" media="screen,projection"/>
 
+    <!-- Vue JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+
 </head>

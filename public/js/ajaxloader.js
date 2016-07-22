@@ -17,6 +17,9 @@ function loadContent() {
         case "courses":
             ajaxUrl = '/members/courses';
             break;
+        case "blogComponent":
+            ajaxUrl = '/component';
+            break;
         default:
             ajaxUrl = '/members/ajax/' + hash;
     }

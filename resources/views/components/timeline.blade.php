@@ -284,93 +284,52 @@
 
 <ul class="timeline">
 
-    </br></br></br>
+  
+  </br></br></br>
 
 
 	<!-- Item 1 -->
 	<li>
 		<div class="direction-r">
 			<div class="flag-wrapper">
-				<span class="flag">Freelancer</span>
-				<span class="time-wrapper"><span class="time">2013 - present</span></span>
+				<h5 class="flag">First Meeting</h5>
+				<span class="time-wrapper"><span class="time {{ $color->mainColorText }}">September 2016</span></span>
 			</div>
-			<div class="desc"><span class="{{ $color->lightText }}"> My current employment. Way better than the position before!</span></div>
+			<div class="desc"><span class="{{ $color->lightText }}"> Meet and greet all new members, talk about the coming year, get smashed, build a laser, take over the world. </span></div>
 		</div>
 	</li>
   
 
-    </br></br></br>
+  </br></br></br>
 
 
 	<!-- Item 2 -->
 	<li>
 		<div class="direction-l">
 			<div class="flag-wrapper">
-				<span class="flag">Apple Inc.</span>
-				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
+				<h5 class="flag">NodeBots Battle.</h5>
+				<span class="time-wrapper"><span class="time {{ $color->mainColorText }}">January 2017</span></span>
 			</div>
-			<div class="desc"><span class="{{ $color->lightText }}">My first employer. All the stuff I've learned and projects I've been working on.</span></div>
+			<div class="desc"><span class="{{ $color->lightText }}">Build a tiny robot.  Stick it in a circle. Smash each other to pieces.  Learn a bit of Node.js and the Johnny Five Module</span></div>
 		</div>
 	</li>
 
 
-    </br></br></br>
+  </br></br></br>
 
 
 	<!-- Item 3 -->
 	<li>
 		<div class="direction-r">
 			<div class="flag-wrapper">
-				<span class="flag">Harvard University</span>
-				<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
+				<h5 class="flag">Hackathon</h5>
+				<span class="time-wrapper"><span class="time {{ $color->mainColorText }}">March 2017</span></span>
 			</div>
-			<div class="desc"><span class="{{ $color->lightText }}">A description of all the lectures and courses I have taken and my final degree?</span></div>
+			<div class="desc"><span class="{{ $color->lightText }}">The dankest of the dankest of the dank hackathons to ever be around.  EMU hacks 2k17</span></div>
 		</div>
 	</li>
 
-
-    </br></br></br>
-
-
-    <!-- Item 4 -->
-	<li>
-		<div class="direction-l">
-			<div class="flag-wrapper">
-				<span class="flag">Apple Inc.</span>
-				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-			</div>
-			<div class="desc"><span class="{{ $color->lightText }}">My first employer. All the stuff I've learned and projects I've been working on.</span></div>
-		</div>
-	</li>
-	
-    </br></br></br>
-
-
-    <!-- Item 5 -->
-	<li>
-		<div class="direction-r">
-			<div class="flag-wrapper">
-				<span class="flag">Harvard University</span>
-				<span class="time-wrapper"><span class="time">2008 - 2011</span></span>
-			</div>
-			<div class="desc"><span class="{{ $color->lightText }}">A description of all the lectures and courses I have taken and my final degree?</span></div>
-		</div>
-	</li>
-
-    </br></br></br>
-
-    <!-- Item 6 -->
-	<li>
-		<div class="direction-l">
-			<div class="flag-wrapper">
-				<span class="flag">Apple Inc.</span>
-				<span class="time-wrapper"><span class="time">2011 - 2013</span></span>
-			</div>
-			<div class="desc"><span class="{{ $color->lightText }}">My first employer. All the stuff I've learned and projects I've been working on.</span></div>
-		</div>
-	</li>
-
-    </br></br></br>
+  </br></br></br>
     
   
 </ul>

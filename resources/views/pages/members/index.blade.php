@@ -54,7 +54,8 @@
                     </li>
                 </ul>
             </li>
-            <li class="bold"><a href="#profile" class="waves-effect waves-purple">Profile Settings</a></li>
+            <li class="bold"><a href="#profile" class="waves-effect {{ $color->mainWaves }}">Profile Settings</a></li>
+            <li class="bold"><a href="#blogComponent" class="waves-effect {{ $color->mainWaves }}">Blog Component</a></li>
         </ul>
                 
         <div id="ajax" class="row">

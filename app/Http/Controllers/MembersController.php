@@ -21,6 +21,11 @@ class MembersController extends Controller
     public function index() {
         return view('pages.members.index', ['color' => $this->color]);
     }
+    
+
+    public function component() {
+        return view('pages.members.ajax.component', ['color' => $this->color]);
+    }
 
 
     public function courses(Request $request) {

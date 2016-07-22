@@ -11,6 +11,7 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('/home', 'HomeController@index');
 
+Route::get('/component', 'MembersController@component');
 
 Route::group(['prefix' => 'file'], function() {
     Route::post('/avatar', 'FileController@updateAvatar');
