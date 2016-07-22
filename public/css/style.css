@@ -5,6 +5,10 @@ html {
     /*font-weight: 200;*/
 }
 
+th {
+    min-width: 60px;
+}
+
 .splash-background {
     background-image: url(/img/intro-bg.jpg);
     background-color: #000;
@@ -24,6 +28,16 @@ html {
     margin-left: 50%;
 }
 
-th {
-    min-width: 60px;
+.memberCard {
+    display: inline-block;
+    width: 300px !important;
+    height: 400px !important;
+}
+
+.memberCardContainer {
+    -webkit-column-count: 3;
+    /* Chrome, Safari, Opera */
+    -moz-column-count: 3;
+    /* Firefox */
+    column-count: 3;
 }
